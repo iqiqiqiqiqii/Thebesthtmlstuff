@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars during intro */
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  /* --- Intro Screen Styles --- */
+  #intro-screen {
+    position: fixed; /* Ensures it covers the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Allows vertical stacking of text and button */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive; /* Fallback to cursive */
+    font-size: 2.5em; /* Adjust size as needed */
+    text-align: center;
+    overflow: hidden; /* Hide content before it "lands" */
+    z-index: 9999; /* Ensure it's on top of everything */
+  }
+
+  #intro-text {
+    display: inline-block; /* Allows transform properties */
+    perspective: 500px; /* For 3D rotation */
+    transform-style: preserve-3d; /* For proper 3D rendering */
+    line-height: 1.2; /* Adjust line spacing for two lines */
+    margin-bottom: 30px; /* Space between text and button */
+    
+    /* Initial state matching the 0% keyframe for smooth start */
+    opacity: 0; 
+    transform: translateY(-150px) rotateY(0deg) scale(0.2); 
+
+    /* Combined animation: land-with-spin (including spin and landing), and color change */
+    animation: 
+      land-with-spin 2s ease-out forwards, /* Spin and land over 2 seconds */
+      color-pulse 2s infinite alternate; /* Continuous color change */
+  }
+
+  /* --- Play Button Styles --- */
+  #play-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    background-color: blue; /* Initial button color */
+    color: white;
+    border: 3px solid blue; /* Border color */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.1s ease;
+    display: none; /* Hidden by default */
+  }
+
+  #play-button:hover {
+    background-color: #6a0dad; /* Darker purple on hover */
+    border-color: blue;
+    transform: scale(1.05);
+  }
+
+  #play-button:active {
+    transform: scale(0.98);
+  }
+
+  /* Keyframes for continuous color change */
+  @keyframes color-pulse {
+    0% { color: dodgerblue; }
+    50% { color: blueviolet; }
+    100% { color: dodgerblue; }
+  }
+
+  /* Keyframes for combined landing and spinning effect of the whole text */
+  @keyframes land-with-spin {
+    0% { 
+      transform: translateY(-150px) rotateY(0deg) scale(0.2); 
+      opacity: 0;
+    }
+    30% { /* Start spinning and becoming visible */
+        transform: translateY(-50px) rotateY(360deg) scale(0.6); /* First full spin */
+        opacity: 1;
+    }
+    60% { /* Continue spinning and falling */
+        transform: translateY(50px) rotateY(720deg) scale(1.0); /* Second full spin */
+        opacity: 1;
+    }
+    85% { /* Overshoot slightly, still spinning */
+        transform: translateY(-10px) rotateY(1080deg) scale(1.1); /* Third full spin */
+    }
+    100% { /* Land in final position */
+      transform: translateY(0) rotateY(1080deg) scale(1); /* Land in place */
+      opacity: 1;
+    }
+  }
+
+  /* Styles for the dynamically created iframe */
+  #game-iframe {
+    position: absolute; /* Cover the whole screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none; /* Remove default iframe border */
+    display: none; /* Hidden by default */
+    opacity: 0; /* For fade-in effect */
+    transition: opacity 0.5s ease-in;
+    z-index: 9990; /* Below intro screen during fade-out */
+  }
+</style>
+</head>
+<body>
+
+<div id="intro-screen">
+  <span id="intro-text"></span> <button id="play-button">PLAY</button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const introTextContent = `Sketch made by<br>ghirwil :D`; 
+    const introScreen = document.getElementById('intro-screen');
+    const introTextElement = document.getElementById('intro-text');
+    const playButton = document.getElementById('play-button');
+
+    const introAnimationDuration = 2000; // Duration of land-with-spin animation in milliseconds (2 seconds)
+    
+    // Set the text content for the intro
+    introTextElement.innerHTML = introTextContent; // Use innerHTML for <br> tag
+
+    // Show the play button after the text animation completes
+    setTimeout(() => {
+      playButton.style.display = 'block'; // Make button visible
+      playButton.style.opacity = '0'; // Start faded out for a smooth transition
+      playButton.style.transition = 'opacity 0.5s ease-in';
+      setTimeout(() => {
+        playButton.style.opacity = '1'; // Fade in the button
+      }, 50); // Small delay to ensure transition applies
+    }, introAnimationDuration); // Button appears after text animation finishes
+
+    // Function to create and load the game in an iframe
+    function loadGameInIframe() {
+        // Create the iframe element
+        const gameIframe = document.createElement('iframe');
+        gameIframe.id = 'game-iframe';
+        gameIframe.src = 'game.html'; // Path to your game's HTML file
+        gameIframe.allowFullscreen = true; // Allow fullscreen for the game if it supports it
+        gameIframe.setAttribute('loading', 'eager'); // Start loading immediately
+
+        // Append iframe to the body
+        document.body.appendChild(gameIframe);
+
+        // Once the iframe is created and added to DOM, hide the intro screen smoothly
+        // and fade in the iframe.
+        introScreen.style.transition = 'opacity 0.5s ease-out';
+        introScreen.style.opacity = '0';
+        
+        gameIframe.style.display = 'block'; // Make iframe visible
+        // To ensure iframe starts loading before fading in, might use onload event
+        gameIframe.onload = () => {
+            gameIframe.style.opacity = '1'; // Fade in the iframe after it loads
+        };
+
+        setTimeout(() => {
+            introScreen.remove(); // Remove the intro screen from DOM after it fades out
+        }, 500); // Wait for the fade out transition to complete
+    }
+
+    // Set up click listener for the play button to run the loadGameInIframe function
+    playButton.addEventListener('click', loadGameInIframe);
+  });
+</script>
+
+</body>
+</html>
