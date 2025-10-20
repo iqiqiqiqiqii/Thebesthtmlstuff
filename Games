@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTL6D79ZZ4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BTL6D79ZZ4');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>The Baby in Yellow</title>
+    <meta name="description" content=" Enter a chilling world of suspense and mystery as you navigate eerie surroundings and unravel the secrets behind the enigmatic Baby in Yellow. Can you survive the night? Play now and test your nerves in this spine-tingling horror experience">
+    <meta property="og:image" content="https://gnhustgames.github.io/assets/imageGame/thebabyinyellow.webp">
+    <link rel="icon" href="https://gnhustgames.github.io/assets/imageGame/thebabyinyellow.webp">
+    <!-- Bootstrap core CSS -->
+    <link href="https://gnhustgames.github.io/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://gnhustgames.github.io/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://gnhustgames.github.io/assets/css/main.css">
+    <link rel="stylesheet" href="https://gnhustgames.github.io/assets/css/owl.css">
+    <link rel="stylesheet" href="https://gnhustgames.github.io/assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+</head>
+
+<body id="body">
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="https://gnhustgames.github.io/" class="logo">
+                            <img src="https://gnhustgames.github.io/assets/images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Search End ***** -->
+                        <div class="search-input">
+                            <form id="search">
+                                <input type="text" placeholder="Search Games ..." id='searchText' name="searchKeyword" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                            <div class="result_search" id="result_search" style="display: none;">
+
+                            </div>
+                            <div class="not_found" id="not_found">
+                                <p>Hmm, nothing’s coming up for that. Try searching for something else? </p>
+                            </div>
+                        </div>
+                        <!-- ***** Search End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav nav_header">
+                            <li><a href="https://gnhustgames.github.io/actiongames/">Action Games <img src="https://gnhustgames.github.io/assets/images/action.png" alt=""> </a></li>
+                            <li><a href="https://gnhustgames.github.io/iogames/">IO Games <img src="https://gnhustgames.github.io/assets/images/iogames.png" alt=""> </a></li>
+                            <li><a href="https://gnhustgames.github.io/sportgames/">Sport Games <img src="https://gnhustgames.github.io/assets/images/sportgames.png" alt=""> </a></li>
+                            <li><a href="https://gnhustgames.github.io/2playergames/">2 Player Games <img src="https://gnhustgames.github.io/assets/images/2playergames.png" alt=""></a></li>
+                            <li><a href="https://gnhustgames.github.io/puzzlegames/">Puzzle Games <img src="https://gnhustgames.github.io/assets/images/puzzlegames.png" alt=""></a></li>
+
+                            <li><a href="https://discord.com/invite/MxS3pbYwUj">Join Discord <img src="https://gnhustgames.github.io/assets/images/discord.webp" alt=""></a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-content">
+
+                    <!-- Main Game -->
+                    <div class="main-banner">
+                        <div class="row">
+                            <div class="name-game">
+                                <h1>The Baby in Yellow</h1>
+                            </div>
+                            <div class="gamezone col-lg-12">
+                                <div class="col-lg-2 ads">
+                                    <!-- AdForGames.com code begin -->
+                                    <script>
+                                        var afg = {};
+                                        afg.u = 6446;
+                                        afg.s = 5;
+                                        document.write("<sc" + "ript src='//js.adforgames.com/cd.js'></sc" + "ript>");
+                                    </script>
+                                    <!-- AdForGames.com code end -->
+                                </div>
+                                <div class="col-lg-8 col-md-12 main_game">
+                                    <iframe src="https://gnhustgames.github.io/babyinyellow/" style="width: 100%; height: 730px" frameborder="0" id="frame-game"></iframe>
+
+                                    <div class="header-text">
+                                        <div class="game_tasks">
+                                            <div class="fullscreen" id="btn_fullscreen">
+                                                <p>Full Screen</p>
+                                                <i id="full-screen" class="fa-solid fa-expand"></i>
+                                            </div>
+                                            <a href="https://gnhustgames.github.io/babyinyellow/" class="directlink">
+                                                <p>Direct Link</p>
+                                                <i class="fa-solid fa-arrow-pointer"></i>
+                                            </a>
+                                        </div>
+
+                                        <h4><em>How to</em> Play The Baby in Yellow ?</h4>
+                                        <div class="infor-first">
+                                            <p>
+                                                In The Baby in Yellow, prepare for an unnerving journey into the unknown. As darkness falls, you find yourself alone in a dimly lit house, with only the unsettling presence of a mysterious baby for company. With each creak of the floorboards and every
+                                                flicker of the lights, tension mounts as you unravel the secrets lurking within the shadows. Can you survive the night and uncover the truth behind the eerie Baby in Yellow? Brace yourself for a spine-chilling
+                                                experience that will keep you on the edge of your seat until the very end.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 ads">
+                                    <!-- AdForGames.com code begin -->
+                                    <script>
+                                        var afg = {};
+                                        afg.u = 6446;
+                                        afg.s = 10;
+                                        document.write("<sc" + "ript src='//js.adforgames.com/cd.js'></sc" + "ript>");
+                                    </script>
+                                    <!-- AdForGames.com code end -->
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- AdForGames.com code begin -->
+                                <script>
+                                    var afg = {};
+                                    afg.u = 6446;
+                                    afg.s = 31;
+                                    afg.anchor = "bottom";
+                                    document.write("<sc" + "ript src='//js.adforgames.com/cd.js'></sc" + "ript>");
+                                </script>
+                                <!-- AdForGames.com code end -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Game End -->
+
+                    <!-- ***** Similar Games Start ***** -->
+                    <div class="most-popular">
+                        <div class="row">
+                            <div class="col-lg-2 left_similargames">
+                                <!-- <h1>GGGGGGG</h1> -->
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="heading-section">
+                                    <h4>Similar Games</h4>
+                                </div>
+                                <div class="row" id="similar_games">
+                                    <!-- Load Data Game Similar -->
+                                </div>
+                            </div>
+                            <div class="col-lg-2 right_similargames">
+                                <!-- <h1>GGGGGGG</h1> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ***** Similar Games End ***** -->
+                    <!-- ***** Gaming Library End ***** -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+
+            <div class="information">
+                <div class="row">
+                    <div class="information_website">
+                        <p class="information_name"><a href="https://gnhustgames.github.io/about-us/">About Us</a> </p>
+
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name"><a href="https://gnhustgames.github.io/contact/">Contact Us</a> </p>
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name"><a href="https://gnhustgames.github.io/privacy-policy/">Privacy Policy</a> </p>
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name"><a href="https://gnhustgames.github.io/dmca/">DMCA</a> </p>
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name">
+                            <a href="https://www.facebook.com/gnhustgames"><img src="https://gnhustgames.github.io/assets/images/facebook.webp" style="height: 30px;width:30px" alt=""></a>
+                        </p>
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name">
+                            <a href="https://www.youtube.com/@gnhustgames"><img src="https://gnhustgames.github.io/assets/images/youtube.png" style="height: 30px;width:30px" alt=""></a>
+                        </p>
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name">
+                            <a href="https://www.tiktok.com/@gnhustgame"><img src="https://gnhustgames.github.io/assets/images/tiktok.webp" style="height: 30px;width:30px" alt=""></a>
+                        </p>
+                    </div>
+                    <div class="information_website">
+                        <p class="information_name">
+                            <a href="https://discord.com/invite/MxS3pbYwUj"><img src="https://gnhustgames.github.io/assets/images/discord.png" style="height: 30px;width:30px" alt=""></a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 copyright">
+                    <p>Copyright © 2024 <a href="https://gnhustgames.github.io/">GNHUSTGames</a>. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://gnhustgames.github.io/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://gnhustgames.github.io/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://gnhustgames.github.io/assets/js/isotope.min.js"></script>
+    <script src="https://gnhustgames.github.io/assets/js/owl-carousel.js"></script>
+    <script src="https://gnhustgames.github.io/assets/js/tabs.js"></script>
+    <script src="https://gnhustgames.github.io/assets/js/popup.js"></script>
+    <script src="https://gnhustgames.github.io/assets/js/custom.js"></script>
+    <script src="https://gnhustgames.github.io/assets/js/searchgames.js">
+    </script>
+    <script src="https://gnhustgames.github.io/assets/js/getsimilargames.js">
+    </script>
+    <script src="https://gnhustgames.github.io/assets/js/fullscreen.js">
+    </script>
+    <script>
+        getGameSimilar()
+        getAllGames()
+    </script>
+
+</body>
+
+</html>
